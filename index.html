@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- start navbar -->
+  <main>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand">Weather</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start cards section -->
+    <section>
+      <div class="container">
+        <!-- الكارد بتاع النهاردة -->
+        <div class="row">
+          <div class="col">
+            <!-- هنا اسم المدينة -->
+            <h1>Cairo</h1>
+            <!-- هنا التاريخ -->
+            <p>Friday, October 27, 2023</p>
+            <!-- هنا درجة الحرارة (حطها في عنصر لوحدها عشان تكبرها) -->
+            <h1>24°C</h1>
+            <!-- هنا وصف الطقس -->
+            <p>Partly cloudy</p>
+            <!-- هنا الـ 3 تفاصيل (Feels like, Humidity, Wind) -->
+            <!-- متستخدمش row/col عشان هم نازلين تحت بعض، استخدم div عادية -->
+            <div class="weather-details">
+              <p><i class="fas fa-temperature-half"></i> Feels like 27°C</p>
+              <p><i class="fas fa-droplet"></i> Humidity 71%</p>
+              <p><i class="fas fa-wind"></i> Wind 14 km/h</p>
+            </div>
+          </div>
+          <div class="col">
+            <!-- هنا مكان الأيقونة الكبيرة -->
+            <div class="weather-icons">
+              <div icon="sunny" data-label="Sunny">
+                <span class="sun"></span>
+              </div>
+
+              <div icon="cloudy" data-label="Perfect">
+                <span class="cloud"></span>
+                <span class="cloud"></span>
+              </div>
+
+              <div icon="snowy" data-label="Chilly">
+                <span class="snowman"></span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+
+              <div icon="stormy" data-label="Soggy">
+                <span class="cloud"></span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+
+              <div icon="supermoon" data-label="Cool!">
+                <span class="moon"></span>
+                <span class="meteor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">Saturday <br> 33°-18° <br> Sunny</div>
+          <div class="col">Sunday <br> 33°-18° <br> Cloudy</div>
+          <div class="col">Monday <br> 33°-18° <br> Rain</div>
+          <div class="col">Tuesday <br> 33°-18° <br> Rain</div>
+          <div class="col">Wednesday <br> 33°-18° <br> Cloudy</div>
+          <!-- خليهم 5 بس، أو 4 حسب ما تحب، المهم يبقوا ثابتين -->
+        </div>
+      </div>
+    </section>
+    <!-- end cards section -->
+
+    <!-- <div id="loading">
+    <span class="loader"></span>
+  </div> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </main>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- 
+<div class="container">
+  <div id="rowBody" class="row  row-cols-md-4 g-4 py-5">
+
+  </div>
+</div> 
+
+
+-->
